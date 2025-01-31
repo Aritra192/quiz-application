@@ -5,7 +5,7 @@ async function fetchQuestions() {
     try {
         ques.innerHTML = `<h5>Please Wait!! Loading Questions...</h5>`;
         
-        const response = await fetch('https://opentdb.com/api.php?amount=10');
+        const response = await fetch('https://opentdb.com/api.php?amount=100');
         if (!response.ok) {
             throw new Error('Unable to fetch data');
         }
